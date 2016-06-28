@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "@angular/common": "2.0.0-rc.1",
-    "@angular/compiler": "2.0.0-rc.1",
-    "@angular/core": "2.0.0-rc.1",
-    "@angular/http": "2.0.0-rc.1",
-    "@angular/platform-browser": "2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "@angular/router": "2.0.0-rc.1",
+    "@angular/common": "^2.0.0-rc.3",
+    "@angular/compiler": "^2.0.0-rc.3",
+    "@angular/core": "^2.0.0-rc.3",
+    "@angular/http": "^2.0.0-rc.3",
+    "@angular/platform-browser": "^2.0.0-rc.3",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.3",
+    "@angular/router": "^2.0.0-rc.2",
     "es6-shim": "^0.35.0",
-    "ionic-angular": "2.0.0-beta.9",
-    "ionic-native": "1.2.4",
+    "ionic-angular": "^2.0.0-beta.10",
+    "ionic-native": "1.3.2",
     "ionicons": "3.0.0",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
@@ -34,21 +34,17 @@
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard",
     {
-      "locator": "https://github.com/phonegap-googlemaps-plugin/cordova-plugin-googlemaps",
-      "id": "cordova-plugin-googlemaps"
-    },
-    {
-      "locator": "https://bitbucket.org/nightstomp/cordova-plugin-googlemaps-sdk.git",
-      "id": "com.googlemaps.ios"
+      "locator": "https://github.com/mapsplugin/cordova-plugin-googlemaps.git",
+      "id": "cordova-plugin-googlemaps",
+      "variables": {
+        "API_KEY_FOR_IOS": "AIzaSyBlOXsfHGBOwzQyoVs-fkrjo9LC8K3GeI0",
+        "API_KEY_FOR_ANDROID": "AIzaSyBlEvVLjNRwDyd2vNECoBSsS6v_yEYc0m0"
+      }
     }
   ],
   "cordovaPlatforms": [
     "ios",
-    {
-      "platform": "ios",
-      "version": "",
-      "locator": "ios"
-    }
+    "android"
   ],
   "name": "ionic2-google-maps",
   "description": "ionic2-google-maps: An Ionic project"

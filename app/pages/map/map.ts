@@ -8,10 +8,11 @@ import {GoogleMap, GoogleMapsEvent} from 'ionic-native';
 export class MapPage {
   map: GoogleMap;
   constructor(private platform: Platform) {
-    platform.ready().then(() => this.onPlatformReady());
+    //platform.ready().then(() => this.onPlatformReady());
   }
 
   private onPlatformReady(): void {
+    console.log('platform ready');
     this.map = new GoogleMap('map');
     this.map.on(GoogleMapsEvent.MAP_READY)
       .subscribe(() => this.onMapReady());
@@ -19,5 +20,9 @@ export class MapPage {
 
   private onMapReady(): void {
     console.log('Map ready');
+  }
+
+  ionViewLoaded() {
+    this.onPlatformReady();
   }
 }

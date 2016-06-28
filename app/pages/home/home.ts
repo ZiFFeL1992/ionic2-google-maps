@@ -11,6 +11,7 @@ export class HomePage {
   }
 
   openMap() {
+	console.log('pushing');
     this.navController.push(MapPage);
   }
 }
