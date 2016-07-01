@@ -1,8 +1,7 @@
 import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HomePage} from './pages/home/home';
-import {MapPage} from './pages/map/map';
+import {TabsPage} from './pages/tabs/tabs';
 
 
 @Component({
@@ -13,8 +12,7 @@ export class MyApp {
   private rootPage: any;
 
   constructor(private platform: Platform) {
-    this.rootPage = HomePage;
-    // this.rootPage = MapPage;
+    this.rootPage = TabsPage;
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

@@ -10,7 +10,10 @@ export class HomePage {
 
   }
 
+<<<<<<< HEAD
   openMap() {
     this.navController.push(MapPage);
   }
+=======
+>>>>>>> bd930e1... Tabs template
 }
