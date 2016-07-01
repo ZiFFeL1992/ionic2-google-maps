@@ -6,14 +6,5 @@ import {MapPage} from "../map/map";
   templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
-  constructor(private navController: NavController) {
-
-  }
-
-<<<<<<< HEAD
-  openMap() {
-    this.navController.push(MapPage);
-  }
-=======
->>>>>>> bd930e1... Tabs template
+  constructor(private navController: NavController) { }
 }
